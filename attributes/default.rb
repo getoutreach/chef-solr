@@ -19,3 +19,4 @@ default['solr']['user']     = 'solr'
 default['solr']['group']    = 'solr'
 default['solr']['install_java'] = true
 default['solr']['java_options'] = "-Xms128m -Xmx#{(node['memory']['total'].to_i * 0.6).floor / 1024}m"
+default['solr']['ulimit']   = 32768
